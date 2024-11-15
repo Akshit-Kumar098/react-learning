@@ -3,6 +3,7 @@ import './App.css';
 // import Useme from './user';
 import React,{Component} from 'react';
 import { useState } from 'react';
+import Amkshit from './user';
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function Ubutton(){
     <div>
       <h1>{data}</h1>
     <button onClick={updateData}>UPDATEButton</button>
+    <Amkshit/>
     </div>
   )
 }

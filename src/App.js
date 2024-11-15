@@ -29,7 +29,11 @@ class Useme extends Component{
   render()
   {
       return(
+          <div>
           <h1>Currently persuing btech from dpgitm</h1>
+          <h1>Currently persuing btech from sgt</h1>
+          <h1>Currently persuing btech from dsd</h1>
+          </div>
       )
   }
 

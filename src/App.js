@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 // import Useme from './user';
-import React,{Component} from 'react'
+import React,{Component} from 'react';
+import { useState } from 'react';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       
       <Student/>
       <Useme/>
+      <Ubutton/>
     </div>
     
   );
@@ -16,7 +18,11 @@ function App() {
 }
 
 function Student(){
- 
+  function btn(){
+    return(
+      alert("hello")
+    )
+  }
   return(
    <div>
      <h1>Akshit</h1>
@@ -44,9 +50,18 @@ class Useme extends Component{
   }
 
 }
-function btn(){
+function Ubutton(){
+  let [data,setData]=useState("ravi")
+  function updateData(){
+    return(
+      setData("Akshit")
+    )
+  }
   return(
-    alert("hello")
+    <div>
+      <h1>{data}</h1>
+    <button onClick={updateData}>UPDATEButton</button>
+    </div>
   )
 }
 

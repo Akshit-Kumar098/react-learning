@@ -5,12 +5,14 @@ import React,{Component} from 'react';
 import { useState } from 'react';
 import Amkshit from './user';
 import Names from './Student.js'
+import Yoo from './Student2.js'
 
 function App() {
   return (
     <div className="App">
       
       <Student/>
+     
       <Useme/>
       <Ubutton/>
     </div>
@@ -39,6 +41,13 @@ function Student(){
 
 
 class Useme extends Component{
+  constructor(){
+    super();
+    this.state={
+      name:"amman"
+    }
+  }
+ 
   render()
   {
       return(
@@ -47,6 +56,8 @@ class Useme extends Component{
           <h1>Currently persuing btech from sgt</h1>
           <h1>Currently persuing btech from dsd</h1>
           <button onClick={()=>alert("hey")}>click on me </button>
+          <Yoo name={this.state.name} />
+          <button onClick={()=>this.setState({name:"akshit"})}>updateme</button>
           </div>
       )
   }
@@ -67,6 +78,7 @@ function Ubutton(){
     <Names name="akshit"/>
     <Names name="naman"/>
     <Names name="akshay"/>
+    
     </div>
   )
 }

@@ -85,6 +85,7 @@ function Ubutton() {
 
 function Input(){
   const [data,setdata]=useState(null)
+  const [print,setprint]=useState(false)
   function getData(val){
     console.log(val.target.value)
     setdata(val.target.value)
@@ -92,8 +93,13 @@ function Input(){
   return(
     <div>
       <h1>input box here</h1>
-      <h2>{data}</h2>
+      {
+        print?
+        <h2>{data}</h2>
+        :null
+      }
       <input type='text' onChange={getData}/>
+      <button onClick={()=>setprint(true)}>print value</button>
     </div>
   )
 }

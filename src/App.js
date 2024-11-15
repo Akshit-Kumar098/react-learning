@@ -4,6 +4,7 @@ import './App.css';
 import React,{Component} from 'react';
 import { useState } from 'react';
 import Amkshit from './user';
+import Names from './Student.js'
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function Ubutton(){
       <h1>{data}</h1>
     <button onClick={updateData}>UPDATEButton</button>
     <Amkshit/>
+    <Names name="akshit"/>
+    <Names name="naman"/>
+    <Names name="akshay"/>
     </div>
   )
 }

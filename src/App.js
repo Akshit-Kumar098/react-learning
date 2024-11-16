@@ -17,6 +17,7 @@ function App() {
       <Ubutton />
       <Input />
       <Peach/>
+      <Grapes/>
     </div>
 
   );
@@ -109,11 +110,34 @@ function Peach(){
   return(
       <div>
           {
-            status? <h1>Hello world</h1>:false
+            status? <h1>Hello world</h1>:null
           }
-          {/* <button onClick={()=>setStatus(false)}>Hide</button> */}
+          <button onClick={()=>setStatus(false)}>Hide</button>
           <button onClick={()=>setStatus(true)}>Show</button>
       </div>
+  )
+}
+function Grapes(){
+  const[name,setName]=useState("")
+  const[interest,setInterest]=useState("")
+  const[tnc,setTnc]=useState(false)
+  function getFormData(e){
+    console.log(name,interest,tnc)
+  e.preventDefault()
+  }
+  return(
+    <div>
+      <form onSubmit={getFormData}>
+        <input type='text' placeholder='enter your name' onChange={(e)=>setName(e.target.value)}/><br/><br/>
+        <select onChange={(e)=>setInterest(e.target.value)}>
+          <option>select options</option>
+          <option>hiii</option>
+          <option>bye</option>
+        </select><br/><br/>
+        <input type='checkbox' onChange={(e)=>setTnc(e.target.checked)} />Accept t&c<br/><br/>
+        <button type='submit'>submit</button>
+      </form>
+    </div>
   )
 }
 

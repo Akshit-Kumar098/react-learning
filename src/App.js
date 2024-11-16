@@ -16,6 +16,7 @@ function App() {
       <Useme />
       <Ubutton />
       <Input />
+      <Peach/>
     </div>
 
   );
@@ -103,7 +104,18 @@ function Input(){
     </div>
   )
 }
-
+function Peach(){
+  const [status,setStatus]=useState(false)
+  return(
+      <div>
+          {
+            status? <h1>Hello world</h1>:false
+          }
+          {/* <button onClick={()=>setStatus(false)}>Hide</button> */}
+          <button onClick={()=>setStatus(true)}>Show</button>
+      </div>
+  )
+}
 
 
 

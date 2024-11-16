@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Amkshit from './user';
 import Names from './Student.js'
 import Yoo from './Student2.js'
+import Profile from './Profile.js';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Input />
       <Peach/>
       <Grapes/>
+      <Profile/>
     </div>
 
   );

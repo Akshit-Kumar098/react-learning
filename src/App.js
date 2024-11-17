@@ -29,6 +29,7 @@ function App() {
       <Profile/>
       <Login/>
       <Momos data={meaonese}/>
+      <System/>
     </div>
 
   );
@@ -152,7 +153,21 @@ function Grapes(){
   )
 }
 
-
+class System extends Component{
+  constructor(){
+    super();
+    this.state={
+      data:"hogya"
+    }
+  }
+  render(){
+    return(
+      <div>
+        <h1>System corrupt {this.state.data} </h1>
+      </div>
+    )
+  }
+}
 
 
 export default App;

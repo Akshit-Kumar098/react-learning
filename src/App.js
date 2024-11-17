@@ -30,6 +30,7 @@ function App() {
       <Login/>
       <Momos data={meaonese}/>
       <System/>
+      <Oyah/>
     </div>
 
   );
@@ -164,6 +165,25 @@ class System extends Component{
     return(
       <div>
         <h1>System corrupt {this.state.data} </h1>
+      </div>
+    )
+  }
+}
+class Oyah extends Component{
+  constructor(){
+    super();
+    this.state={
+      game:"akshit"
+    }
+  }
+  componentDidMount(){
+    console.log("componentdidmount")
+  }
+  render(){
+    return(
+      <div>
+        <h1>Component did mount {this.state.game}</h1>
+        <button onClick={()=>this.setState({game:"honey"})}>hit me hard</button>
       </div>
     )
   }

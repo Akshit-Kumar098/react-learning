@@ -8,8 +8,14 @@ import Names from './Student.js'
 import Yoo from './Student2.js'
 import Profile from './Profile.js';
 import Login from './form.js';
+import Momos from './Functionasprop.js';
 
 function App() {
+  function meaonese(){
+    return(
+      alert("white meao")
+    )
+  }
   return (
     <div className="App">
     
@@ -22,6 +28,7 @@ function App() {
       <Grapes/>
       <Profile/>
       <Login/>
+      <Momos data={meaonese}/>
     </div>
 
   );

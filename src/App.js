@@ -31,6 +31,7 @@ function App() {
       <Momos data={meaonese}/>
       <System/>
       <Oyah/>
+      <Number/>
     </div>
 
   );
@@ -188,6 +189,29 @@ class Oyah extends Component{
     )
   }
 }
-
+class Number extends Component{
+  constructor(){
+    super();
+    this.state={
+      count:0
+    }
+  }
+  shouldComponentUpdate(){
+    console.warn("yoyo",this.state.count);
+    if(this.state.count>3 && this.state.count<10)
+    {
+      return true;
+    }  
+    
+  }
+  render(){
+    return(
+      <div>
+        <h1>should component update {this.state.count}</h1>
+        <button onClick={()=>this.setState({count:this.state.count+1})}>update</button>
+      </div>
+    )
+  }
+}
 
 export default App;

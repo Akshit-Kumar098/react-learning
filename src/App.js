@@ -9,6 +9,7 @@ import Yoo from './Student2.js'
 import Profile from './Profile.js';
 import Login from './form.js';
 import Momos from './Functionasprop.js';
+import Red from './Useeffect.js';
 
 function App() {
   function meaonese(){
@@ -32,6 +33,9 @@ function App() {
       <System/>
       <Oyah/>
       <Number/>
+      <Red/>
+      {/* <Cheems/> */}
+     
     </div>
 
   );
@@ -213,5 +217,24 @@ class Number extends Component{
     )
   }
 }
+
+// class Cheems extends Component{
+// constructor(){
+//   this.state={
+//     show:true
+//   }
+// }
+//   render(){
+//     return(
+//       <div>
+//         {
+//           this.state.show?<h1>cheems component</h1>:""
+//         }
+//         <button onClick={()=>this.setState({show:this.state.show})}>tap</button>
+//       </div>
+//     )
+//   }
+// }
+
 
 export default App;

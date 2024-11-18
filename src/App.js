@@ -10,6 +10,8 @@ import Profile from './Profile.js';
 import Login from './form.js';
 import Momos from './Functionasprop.js';
 import Red from './Useeffect.js';
+import Design from './Headings.js';
+
 
 function App() {
   function meaonese(){
@@ -34,6 +36,7 @@ function App() {
       <Oyah/>
       <Number/>
       <Red/>
+      <Design/>
       {/* <Cheems/> */}
      
     </div>

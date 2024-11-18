@@ -5,7 +5,7 @@ function Nokia(){
     const studentsdata=[
         {name:'akshit',age:22,contact:111},
         {name:'akshit',age:22,contact:333},
-        {name:'akshit',age:22,contact:666}
+        {name:'akshit',age:22,contact:666},
     ]
     return(
         <div>

@@ -13,6 +13,7 @@ import Red from './Useeffect.js';
 import Design from './Headings.js';
 import Nokia from './array.js';
 import Nokia2 from './nestedlist.js';
+import Ohyehh from './purecomponent.js';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <Design/>
       <Nokia/>
       <Nokia2/>
+      <Ohyehh/>
       {/* <Cheems/> */}
      
     </div>

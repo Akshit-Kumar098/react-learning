@@ -1,4 +1,5 @@
 import React from "react";
+import { Table } from "react-bootstrap";
 function Nokia(){
   
     const studentsdata=[
@@ -9,13 +10,24 @@ function Nokia(){
     return(
         <div>
             <h1>Handle array with list</h1>
-           
+            <Table striped variant="dark">
+                <tbody>
+            <tr>
+                        <td>Name</td>
+                        <td>Age</td>
+                        <td>Contact</td>
+            </tr>
              {
-                  studentsdata.map((data)=>
-                    <h1>{data.name},{data.age}</h1>
-                )
-                   
+                  studentsdata.map((item,i)=>
+                    <tr key={i}>
+                        <td>{item.name}</td>
+                        <td>{item.age}</td>
+                        <td>{item.contact}</td>
+                    </tr>
+                )                   
             }
+            </tbody>
+            </Table>
         </div>
     )
 }

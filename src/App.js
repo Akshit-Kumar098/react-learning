@@ -11,6 +11,7 @@ import Login from './form.js';
 import Momos from './Functionasprop.js';
 import Red from './Useeffect.js';
 import Design from './Headings.js';
+import Nokia from './array.js';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Number/>
       <Red/>
       <Design/>
+      <Nokia/>
       {/* <Cheems/> */}
      
     </div>

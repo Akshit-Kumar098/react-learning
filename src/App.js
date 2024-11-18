@@ -12,6 +12,7 @@ import Momos from './Functionasprop.js';
 import Red from './Useeffect.js';
 import Design from './Headings.js';
 import Nokia from './array.js';
+import Nokia2 from './nestedlist.js';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <Red/>
       <Design/>
       <Nokia/>
+      <Nokia2/>
       {/* <Cheems/> */}
      
     </div>

@@ -18,6 +18,7 @@ import Honey from './Usememo.js';
 import Ooo from './Ref.js';
 import Xxx from './Useref.js';
 import Me from './Controllled.js';
+import Bad from './Uncontrolled.js';
 // import Tm from '/.Forwardref.js'
 
 
@@ -57,6 +58,7 @@ function App() {
       <Ooo/>
       <Xxx/>
       <Me/>
+      <Bad/>
       {/* <Tm ref={baby}/>
       <button onClick={babyUpdate}>forwardref</button> */}
      

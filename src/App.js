@@ -16,7 +16,7 @@ import Nokia2 from './nestedlist.js';
 import Ohyehh from './purecomponent.js';
 import Honey from './Usememo.js';
 import Ooo from './Ref.js';
-
+import Xxx from './Useref.js';
 
 
 function App() {
@@ -48,6 +48,7 @@ function App() {
       <Ohyehh/>
       <Honey/>
       <Ooo/>
+      <Xxx/>
       {/* <Cheems/> */}
      
     </div>

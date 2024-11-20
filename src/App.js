@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 // import Useme from './user';
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import { useState } from 'react';
 import Amkshit from './user';
 import Names from './Student.js'
@@ -17,6 +17,9 @@ import Ohyehh from './purecomponent.js';
 import Honey from './Usememo.js';
 import Ooo from './Ref.js';
 import Xxx from './Useref.js';
+import Me from './Controllled.js';
+// import Tm from '/.Forwardref.js'
+
 
 
 function App() {
@@ -25,6 +28,10 @@ function App() {
       alert("white meao")
     )
   }
+  // let baby=useRef(null);
+  // function babyUpdate(){
+  // baby.current.style.backgroundColor="yellow"
+  // }
   return (
     <div className="App">
     
@@ -49,7 +56,9 @@ function App() {
       <Honey/>
       <Ooo/>
       <Xxx/>
-      {/* <Cheems/> */}
+      <Me/>
+      {/* <Tm ref={baby}/>
+      <button onClick={babyUpdate}>forwardref</button> */}
      
     </div>
 

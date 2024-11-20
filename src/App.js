@@ -14,6 +14,7 @@ import Design from './Headings.js';
 import Nokia from './array.js';
 import Nokia2 from './nestedlist.js';
 import Ohyehh from './purecomponent.js';
+import Honey from './Usememo.js';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Nokia/>
       <Nokia2/>
       <Ohyehh/>
+      <Honey/>
       {/* <Cheems/> */}
      
     </div>
